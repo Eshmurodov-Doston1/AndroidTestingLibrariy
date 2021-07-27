@@ -1,0 +1,3 @@
+rootProject.name = "Android Testing Librariy"
+include ':app'
+include ':calculation'
