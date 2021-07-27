@@ -9,14 +9,17 @@ class Calculation {
             Toast.makeText(context, "${a + b}", Toast.LENGTH_SHORT).show()
             return a + b
         }
-        fun minus(a: Int, b: Int): Int {
+        fun minus(context: Context,a: Int, b: Int): Int {
+            Toast.makeText(context, "${a - b}", Toast.LENGTH_SHORT).show()
             return a - b
         }
-        fun divide(a: Int, b: Int): Int {
+        fun divide(context: Context,a: Int, b: Int): Int {
             require(b!=0){"Divide by zero Error"}
+            Toast.makeText(context, "${a/b}", Toast.LENGTH_SHORT).show()
             return a / b
         }
-        fun multiply(a: Int, b: Int): Int {
+        fun multiply(context: Context,a: Int, b: Int): Int {
+            Toast.makeText(context, "${a*b}", Toast.LENGTH_SHORT).show()
             return a * b
         }
     }
